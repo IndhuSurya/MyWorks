@@ -1,0 +1,60 @@
+w-> start of the next word
+e-> end of the currrent word
+b-> beginning of the word
+h-> left
+j-> down
+k-> top
+l-> right
+numbers can be preceded to these
+fafa10go i esc
+go is written 10 times
+fa or Fb to find a and b character
+{}-> use %+Shift to find the matching paranthesis
+0 -> beginning of the line 
+$ -> end of the line
+*-> next character
+#-> previous same character
+gg -> start of the page
+ctrl + G--> status of a line
+G -> end of the page
+2G -> to go to line 2 starting
+/text -> to find the string text
+n -> to find the next occurrence of the same text
+N -> to find the precious occurence of the same text
+o-> insert mode, enters character in new line
+O-> insert mode, enters character in previous new line
+a-> append
+P-> paste in the previous
+p-> Paste after
+dd -> delete the whole line
+d3w -> delete the next 3 words
+d -> delete a character
+dw -> delete a word
+c --> change 
+c$ --> deletes the entire end of line and lets you insert
+ce -> deletes the word and puts in insert mode (for changing a word)
+?word --> search "word" in opposite direction
+ctrl+o -> to go where we came from
+ctrl+i -->> to go where we came from in forward direction
+:!  -> Enables to execute external command
+:r -> retrieves from another file
+:w --> writes to that file 
+R --> Replaces a character with the entered value
+y-- to copy , use it with visual mode and paste using p
+:set ic -> ignore case
+:set is -> consider substrings
+:set hls -> hoghlight strings
+:set noic -> consider cases
+Use the above for string search using / operator
+%s/ad/ac/g -> throughout file chaneg ad to ac
+s/ad/ac/g -> change in just one line
+
+
+mvn exec:java -Dexec.args="GEN ${TENANT} jdbc:oracle:thin:@//scan01-758136.racscan.com:1521/RAMPART ${TENANT} devPASSWORD  ~/tmp/${TENANT}/FortressPackage " | tee build.${TENANT}.`date "+%Y%m%d-%H.%M.%S"`.log
+
+
+
+ 
+
+
+
